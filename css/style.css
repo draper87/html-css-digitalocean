@@ -1,8 +1,8 @@
 /* DEBUG */
-/* [class*="col-"] {
+[class*="col-"] {
   background-color: pink;
   border: 1px solid red;
-} */
+}
 
 .red {
   background-color: red;
@@ -43,13 +43,24 @@ h2 {
   font-weight: bold;
   padding-bottom: 15px;
 }
+h3 {
+  font-size: 2em;
+  font-weight: bold;
+}
 h4 {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.4em;
   line-height: 1.3em;
 }
+h5 {
+  padding: 10px 0;
+}
 h6 {
   color: white;
+}
+p {
+  color: #5c6a88;
+  padding: 5px 0;
 }
 .wrapper_70 {
   width: 70%;
@@ -80,12 +91,15 @@ nav .fas.fa-bars {
 #jumbo .padder {
   padding: 30px;
 }
+#jumbo .padder h3:last-of-type {
+  color: #056dff;
+}
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 2em;
   }
   .ms_section {
-    margin: 10px;
+    margin: 20px;
   }
   h2 {
   font-size: 26px;
@@ -105,11 +119,21 @@ nav .fas.fa-bars {
 }
 /* MAIN */
 /* Sezione teaser */
-main .teaser {
-
-}
-main #teaser img {
+#teaser img {
   width: 50%;
+}
+#teaser a {
+  font-size: 20px;
+}
+#teaser h4 {
+  color: #727e99;
+}
+.ms_sponsors {
+  height: 140px;
+  line-height: 10;
+}
+.ms_sponsors img {
+  max-height: 100%;
 }
 /* Sezione info */
 #info ul li {
@@ -125,6 +149,33 @@ main #teaser img {
 }
 .ms_block img {
   width: 50px;
+}
+/* Sezione Server */
+#server .ms_underline {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid white;
+}
+#server .ms_underline:last-child {
+  border-bottom: 0;
+}
+#server .ms_underline ul {
+  padding: 0;
+}
+#server .ms_underline ul li {
+  padding: 0;
+}
+#server .ms_underline li:first-child {
+  width: 20px;
+}
+#server .ms_underline li:nth-child(2) {
+  padding-left: 60px;
+  /* padding-right: 80px; */
+}
+#server .ms_underline li:last-child {
+  float: right;
+  padding-right: 10px;
+  color: #00b6cc;
 }
 /* Sezione server */
 .gradient {
@@ -149,6 +200,13 @@ footer {
 }
 footer img {
   width: 30px;
+}
+footer p {
+  margin: 5px 0;
+}
+.ms_social li {
+  display: inline-block;
+  font-size: 20px;
 }
 footer ul {
   padding-left: 0;
