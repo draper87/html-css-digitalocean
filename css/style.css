@@ -26,6 +26,7 @@ img {
 ul li {
   display: inline-block;
   padding: 0 5px;
+  list-style: none;
 }
 ul {
   margin: 0;
@@ -36,11 +37,23 @@ h1 {
 }
 h2 {
   margin: 5px 0;
+  color: #031b4e;
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 15px;
 }
 h4 {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.4em;
   line-height: 1.3em;
+}
+h6 {
+  color: white;
+}
+.wrapper_70 {
+  width: 70%;
+  margin: 0 auto;
 }
 
 /* Header */
@@ -55,8 +68,11 @@ nav img {
   width: auto;
   height: 50px;
 }
+nav .fas.fa-bars {
+  line-height: 51px;
+}
+/* Jumbo */
 #jumbo {
-  height: 450px;
   background-image: url(../img/bg-home.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,10 +85,10 @@ nav img {
     font-size: 2em;
   }
   .ms_section {
-    margin: 2px;
+    margin: 10px;
   }
-  #jumbo {
-    height: auto;
+  h2 {
+  font-size: 26px;
   }
 }
 #jumbo .signup {
@@ -84,5 +100,61 @@ nav img {
   margin-bottom: 5px;
 }
 .button img {
+  float: left;
   width: 20px;
+}
+/* MAIN */
+/* Sezione teaser */
+main .teaser {
+
+}
+main #teaser img {
+  width: 50%;
+}
+/* Sezione info */
+#info ul li {
+  display: block;
+  padding: 5px 0px;
+}
+#info ul {
+  padding-left: 10px;
+  border-left: 1px solid grey;
+}
+.ms_block {
+  padding: 10px 0;
+}
+.ms_block img {
+  width: 50px;
+}
+/* Sezione server */
+.gradient {
+  background-image: linear-gradient(#0047c5, #001f9a);
+  color: white;
+}
+.gradient h2 {
+  color: white;
+}
+/* Sezione startnow */
+button {
+  background-color: white;
+  color: #1a7aff;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: 1px solid white;
+}
+/* Footer */
+footer {
+  background-color: #031c4e;
+}
+footer img {
+  width: 30px;
+}
+footer ul {
+  padding-left: 0;
+}
+footer ul li {
+  display: block;
+  padding-left: 0;
+  color: #7a859d;
 }
