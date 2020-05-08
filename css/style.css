@@ -132,21 +132,22 @@ nav .fas.fa-bars {
 }
 /* MAIN */
 /* Sezione teaser */
-#teaser img {
+/* #teaser img {
   width: 50%;
-}
+} */
 #teaser a {
   font-size: 20px;
 }
 #teaser h4 {
   color: #727e99;
 }
-.ms_sponsors {
+.ms_padder {
   height: 140px;
   line-height: 10;
 }
-.ms_sponsors img {
+.ms_padder img {
   max-height: 100%;
+  margin: 0 auto;
 }
 .ms_padder {
   padding: 0;
@@ -245,6 +246,11 @@ footer a {
   }
   .ms_block {
     padding: 10px 0px;
+  }
+  img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
