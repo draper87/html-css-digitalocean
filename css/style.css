@@ -1,8 +1,9 @@
 /* DEBUG */
-[class*="col-"] {
+/* [class*="col-"] {
   background-color: pink;
   border: 1px solid red;
-}
+} */
+
 
 .red {
   background-color: red;
@@ -18,6 +19,9 @@
 .grey {
   background-color: #f3f5f9;
 }
+a:hover {
+  text-decoration: none;
+}
 img {
   width: 100%;
   height: auto;
@@ -27,6 +31,7 @@ ul li {
   display: inline-block;
   padding: 0 5px;
   list-style: none;
+  padding-inline-start: 0px;
 }
 ul {
   margin: 0;
@@ -66,14 +71,36 @@ p {
   width: 70%;
   margin: 0 auto;
 }
-
+.ms_button {
+  background-color: white;
+  color: #1a7aff;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.ms_button:hover {
+  color: white;
+  background-color: #1a7aff;
+  border: 1px solid #1a7aff;
+}
 /* Header */
 nav {
   padding: 7px 0;
 }
 nav a {
-  line-height: 51px;
+  line-height: 50px;
   color: black;
+}
+/* nav ul {
+  padding: 0 10px;
+} */
+nav a:hover {
+  color: #005fe6;
+}
+nav .ms_button {
+  border: 1px solid #1a7aff;
 }
 nav img {
   width: auto;
@@ -94,17 +121,7 @@ nav .fas.fa-bars {
 #jumbo .padder h3:last-of-type {
   color: #056dff;
 }
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 2em;
-  }
-  .ms_section {
-    margin: 20px;
-  }
-  h2 {
-  font-size: 26px;
-  }
-}
+
 #jumbo .signup {
   background-color: white;
   border-radius: 5px;
@@ -139,16 +156,22 @@ nav .fas.fa-bars {
 #info ul li {
   display: block;
   padding: 5px 0px;
+  color: #9ca3b6;
 }
 #info ul {
   padding-left: 10px;
   border-left: 1px solid grey;
 }
 .ms_block {
-  padding: 10px 0;
+  padding: 0px 30px;
 }
 .ms_block img {
   width: 50px;
+}
+/* Sezione carousel */
+.carousel-indicators .active {
+  background-color: #0046c4;
+  border: 1px solid #0046c4;
 }
 /* Sezione Server */
 #server .ms_underline {
@@ -186,14 +209,7 @@ nav .fas.fa-bars {
   color: white;
 }
 /* Sezione startnow */
-button {
-  background-color: white;
-  color: #1a7aff;
-  font-weight: bold;
-  border-radius: 5px;
-  padding: 10px 20px;
-  border: 1px solid white;
-}
+
 /* Footer */
 footer {
   background-color: #031c4e;
@@ -214,5 +230,22 @@ footer ul {
 footer ul li {
   display: block;
   padding-left: 0;
+}
+footer a {
   color: #7a859d;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+  .ms_section {
+    margin: 20px;
+  }
+  h2 {
+  font-size: 26px;
+  }
+  .ms_block {
+    padding: 10px 0px;
+  }
 }
