@@ -148,6 +148,9 @@ nav .fas.fa-bars {
 .ms_sponsors img {
   max-height: 100%;
 }
+.ms_padder {
+  padding: 0;
+}
 /* Sezione info */
 #info ul li {
   display: block;
